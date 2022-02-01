@@ -1,6 +1,5 @@
 package br.com.alura.forum.modelo;
 
-<<<<<<< HEAD
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -9,11 +8,7 @@ import javax.persistence.Id;
 @Entity
 public class Curso {
 
-	@Id @GeneratedValue (strategy = GenerationType.IDENTITY)
-=======
-public class Curso {
-
->>>>>>> 52f568219eeab586e3438410d0a1f71b15038f8e
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String nome;
 	private String categoria;

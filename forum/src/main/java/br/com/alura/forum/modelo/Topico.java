@@ -3,8 +3,6 @@ package br.com.alura.forum.modelo;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-
-<<<<<<< HEAD
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -18,15 +16,10 @@ import javax.persistence.OneToMany;
 public class Topico {
 
 	@Id @GeneratedValue (strategy = GenerationType.IDENTITY)
-=======
-public class Topico {
-
->>>>>>> 52f568219eeab586e3438410d0a1f71b15038f8e
 	private Long id;
 	private String titulo;
 	private String mensagem;
 	private LocalDateTime dataCriacao = LocalDateTime.now();
-<<<<<<< HEAD
 	@Enumerated(EnumType.STRING)
 	private StatusTopico status = StatusTopico.NAO_RESPONDIDO;
 	@ManyToOne
@@ -34,11 +27,6 @@ public class Topico {
 	@ManyToOne
 	private Curso curso;
 	@OneToMany(mappedBy = "topico")
-=======
-	private StatusTopico status = StatusTopico.NAO_RESPONDIDO;
-	private Usuario autor;
-	private Curso curso;
->>>>>>> 52f568219eeab586e3438410d0a1f71b15038f8e
 	private List<Resposta> respostas = new ArrayList<>();
 
 	public Topico(String titulo, String mensagem, Curso curso) {
