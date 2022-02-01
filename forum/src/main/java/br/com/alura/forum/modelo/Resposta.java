@@ -2,6 +2,7 @@ package br.com.alura.forum.modelo;
 
 import java.time.LocalDateTime;
 
+<<<<<<< HEAD
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -19,6 +20,14 @@ public class Resposta {
 	private Topico topico;
 	private LocalDateTime dataCriacao = LocalDateTime.now();
 	@ManyToOne
+=======
+public class Resposta {
+
+	private Long id;
+	private String mensagem;
+	private Topico topico;
+	private LocalDateTime dataCriacao = LocalDateTime.now();
+>>>>>>> 52f568219eeab586e3438410d0a1f71b15038f8e
 	private Usuario autor;
 	private Boolean solucao = false;
 
