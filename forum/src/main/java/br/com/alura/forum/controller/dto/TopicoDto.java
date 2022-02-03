@@ -12,7 +12,6 @@ public class TopicoDto {
 	private String titulo;
 	private String mensagem;
 	private LocalDateTime datacriacao;
-
 	
 	public TopicoDto(Topico topico) {
 		this.id = topico.getId();
